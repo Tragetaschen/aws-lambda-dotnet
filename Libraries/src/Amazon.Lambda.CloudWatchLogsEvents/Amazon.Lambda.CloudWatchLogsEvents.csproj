@@ -9,8 +9,4 @@
     <PackageId>Amazon.Lambda.CloudWatchLogsEvents</PackageId>
     <PackageTags>AWS;Amazon;Lambda</PackageTags>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-    <DefineConstants>NETCOREAPP_3_1</DefineConstants>
-  </PropertyGroup>  
 </Project>

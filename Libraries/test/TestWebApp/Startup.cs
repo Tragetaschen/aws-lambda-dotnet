@@ -61,7 +61,7 @@ namespace TestWebApp
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
-#elif NETCOREAPP_3_1
+#elif NETCOREAPP3_1_OR_GREATER
             services.AddControllers();
 #endif
         }
@@ -72,7 +72,7 @@ namespace TestWebApp
             app.UseMiddleware<Middleware>();
             app.UseResponseCompression();
 
-#if NETCOREAPP_3_1
+#if NETCOREAPP3_1_OR_GREATER
             app.UseRouting();
 
             app.UseAuthorization();

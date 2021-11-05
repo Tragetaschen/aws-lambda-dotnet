@@ -15,10 +15,6 @@
     <DefineConstants>NETCOREAPP_2_1</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-    <DefineConstants>NETCOREAPP_3_1</DefineConstants>
-  </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;1705;CS0618</NoWarn>
   </PropertyGroup>
